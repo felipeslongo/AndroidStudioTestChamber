@@ -4,11 +4,15 @@ import android.animation.Animator;
 import android.animation.AnimatorListenerAdapter;
 import android.animation.ValueAnimator;
 import android.annotation.TargetApi;
+import android.app.Activity;
 import android.content.Context;
 import android.content.pm.PackageManager;
+import android.database.DataSetObserver;
+import android.graphics.drawable.Drawable;
 import android.graphics.drawable.TransitionDrawable;
 import android.support.annotation.NonNull;
 import android.support.design.widget.Snackbar;
+import android.support.v4.content.ContextCompat;
 import android.support.v7.app.AppCompatActivity;
 import android.app.LoaderManager.LoaderCallbacks;
 
@@ -21,7 +25,14 @@ import android.os.AsyncTask;
 import android.os.Build;
 import android.os.Bundle;
 import android.provider.ContactsContract;
+import android.support.v7.widget.StaggeredGridLayoutManager;
+import android.text.Spannable;
+import android.text.SpannableString;
 import android.text.TextUtils;
+import android.text.style.BackgroundColorSpan;
+import android.text.style.DrawableMarginSpan;
+import android.text.style.DynamicDrawableSpan;
+import android.text.style.ImageSpan;
 import android.transition.Transition;
 import android.transition.TransitionManager;
 import android.view.KeyEvent;
@@ -34,7 +45,9 @@ import android.widget.ArrayAdapter;
 import android.widget.AutoCompleteTextView;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.GridView;
 import android.widget.ImageView;
+import android.widget.ListAdapter;
 import android.widget.TextView;
 
 import java.util.ArrayList;
@@ -136,6 +149,18 @@ public class LoginActivity extends AppCompatActivity implements LoaderCallbacks<
                     //ViewAnimationUtils.expand(mImageView);
             }
         });
+
+        //chipPrototype();
+    }
+
+    private void chipPrototype(){
+//        TextView textView  = findViewById(R.id.chip);
+//        SpannableString ss = new SpannableString("abc");
+//        Drawable d = ContextCompat.getDrawable(this, R.drawable.chip2);
+//        d.setBounds(0, 0, d.getIntrinsicWidth(), d.getIntrinsicHeight());
+//        ImageSpan span = new ImageSpan(d, ImageSpan.ALIGN_BASELINE);
+//        ss.setSpan(span, 0, 3, Spannable.SPAN_INCLUSIVE_EXCLUSIVE);
+//        textView.setText(ss);
     }
 
     private void populateAutoComplete() {

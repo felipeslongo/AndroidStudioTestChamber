@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.flexbox.FlexboxLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/chipGroup"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    app:flexWrap="wrap"
+    app:alignItems="flex_start"
+    app:alignContent="flex_start"
+    app:justifyContent="flex_start"
+    tools:context=".ChipsUsingFlexboxActivity">
+
+    <android.support.v7.widget.AppCompatTextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="A Vista"
+        android:textSize="18sp"
+        android:background="@drawable/chip"/>
+
+    <android.support.v7.widget.AppCompatTextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="7 dias"
+        android:textSize="18sp"
+        android:background="@drawable/chip"/>
+
+    <android.support.v7.widget.AppCompatTextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="7/14/21"
+        android:textSize="18sp"
+        android:background="@drawable/chip"/>
+
+    <android.support.v7.widget.AppCompatTextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="28 dias"
+        android:textSize="18sp"
+        android:background="@drawable/chip"/>
+
+    <android.support.v7.widget.AppCompatTextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="14/28"
+        android:textSize="18sp"
+        android:background="@drawable/chip"/>
+
+    <android.support.v7.widget.AppCompatTextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="30 dias"
+        android:textSize="18sp"
+        android:background="@drawable/chip"/>
+
+</com.google.android.flexbox.FlexboxLayout>
